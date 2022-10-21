@@ -2,3 +2,5 @@
 cred.py
 *.xml
 *.iml
+.env
+*.png
