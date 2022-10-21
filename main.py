@@ -43,7 +43,7 @@ class MyClient(discord.Client):
     async def on_message(self, message):
         if message.author == self.user:
             return
-        if message.content.startswith(f'/'):
+        if message.content.startswith('/'):
             champion_name = message.content.split('/')[1]
             await message.channel.send("Searching for best possible build...")
             try:
